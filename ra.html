@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Random Data Generator</title>
+</head>
+<body>
+    <div id="div"></div>
+    <button onclick="gendata()" 
+    style="background-color: lightcoral; border-radius: 5px; height: 35px; width: 125px; border: none;
+    margin-left: 50%;">Generator Data</button>
+</body>
+<style>
+body{
+    background: url("https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" );
+    background-size: 1537px 750px;
+}
+</style>
+<script>
+    const data=[
+ "Success is not final, failure is not fatal: It is the courage to continue that counts. – Winston Churchill",
+ "You miss 100% of the shots you don’t take. – Wayne Gretzky",
+"The only limit to our realization of tomorrow is our doubts of today. – Franklin D. Roosevelt",
+
+"In the end, we will remember not the words of our enemies, but the silence of our friends. – Martin Luther King Jr",
+"It does not matter how slowly you go as long as you do not stop. – Confucius",
+
+"Life is what happens when you're busy making other plans. – John Lennon",
+
+"Don't watch the clock; do what it does. Keep going. – Sam Levenson",
+
+"The best way to predict your future is to create it.– Peter Drucker",
+
+"It always seems impossible until it’s done. – Nelson Mandela",
+
+"Happiness is not something ready-made. It comes from your own actions. – Dalai Lama",
+
+"If you want to lift yourself up, lift up someone else. – Booker T. Washington",
+
+"What lies behind us and what lies before us are tiny matters compared to what lies within us. – Ralph Waldo Emerson",
+
+"Success is not how high you have climbed, but how you make a positive difference to the world. – Roy T. Bennett",
+
+"The only way to do great work is to love what you do. – Steve Jobs",
+
+"Believe you can and you’re halfway there. Theodore Roosevelt"
+
+    ]
+    let random=document.querySelector("div")
+    function gendata(){
+        let con=Math.floor(Math.random()*data.length)
+        random.textContent=data[con]
+        random.style.backgroundColor="grey";
+        random.style.color="white"
+        random.style.height="25px"
+        // random.style.marginTop="340px"
+        random.style.textAlign="center";
+        random.style.fontFamily= "Helvetica Neue", Arial, sans-serif;
+      
+        }
+  
+</script>
+</html>
